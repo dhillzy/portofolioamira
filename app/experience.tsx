@@ -81,8 +81,6 @@ export default function Experience() {
       </FadeDown>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative group/list flex flex-col">
-        {experiences.experiences?.map((exp, index) => { // atau map langsung dari array experiences
-        })}
         {experiences.map((exp, index) => {
           return (
             <motion.div key={exp.id} initial={{ opacity: 0, y: 40, filter: "blur(5px)" }} whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8, delay: index * 0.1 }} className="group/item relative grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 p-6 md:p-8 -mx-6 md:-mx-8 rounded-2xl transition-all duration-500 hover:!opacity-100 hover:!blur-none group-hover/list:opacity-40 group-hover/list:blur-[2px] hover:bg-text-secondary/5 hover:shadow-lg border border-transparent hover:border-text-secondary/10">
